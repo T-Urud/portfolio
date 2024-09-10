@@ -27,7 +27,7 @@ const Header = () => {
         </Link>
         <Link
           smooth
-          to="#"
+          to="#project"
           className="font-semibold text-2xl leading-[30px] text-black ml-5 mt-[30px]"
         >
           Projets
@@ -56,7 +56,7 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link smooth to="#" className="ml-[50px] text-[#727272]">
+          <Link smooth to="#project" className="ml-[50px] text-[#727272]">
             Projets
           </Link>
         </li>

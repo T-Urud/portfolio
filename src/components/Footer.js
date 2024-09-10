@@ -3,7 +3,7 @@ import Socials from "./Socials";
 
 const Footer = () => {
   return (
-    <footer id="contact">
+    <footer id="contact" className="mt-5">
       <div className="min-h-[350px] rounded-3xl m-2 p-10 relative overflow-hidden bg-[#F1F1F1] flex flex-col">
         <h2 className="font-semibold text-4xl leading-[47px]">
           On travaille ensemble ?

@@ -1,0 +1,16 @@
+{
+  "title":"Villa Banovi",
+  "price":"225€",
+  "rating":"4",
+  "location":"Paris, France",
+  "equipments":[
+    "Douche italienne",
+		"Cuisine équipée",
+		"WIFI",
+    "Parking",
+		"Sèche Cheveux",
+		"Machine à laver"
+  ],
+  "description":"Ce loft entièrement rénové, et équipé de meubles de luxe saura vous séduire. Idéalement situé dans le 10ème arrondissement, vous déplacer dans Paris sera un véritable jeu d'enfant.",
+  "host":"Theo D"
+}

@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'OpenSauce_regular';
+  src: url(./assets/font/OpenSauceOne-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSauce_semibold';
+  src: url(./assets/font/OpenSauceOne-SemiBold.ttf);
+  font-weight:bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSauce_light';
+  src: url(./assets/font/OpenSauceOne-Light.ttf);
+  font-weight: lighter;
+  font-style: normal;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,4 +26,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body{
+  scroll-behavior: smooth;
+  font-family: OpenSauce_regular, sans-serif;
 }

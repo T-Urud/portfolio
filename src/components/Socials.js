@@ -1,27 +1,51 @@
 import React from "react";
 import { motion } from "framer-motion";
+import ocLogo from "../assets/svg/Logo_OpenClassrooms.svg";
 
 const Socials = () => {
   return (
     <div className="flex items-center gap-2 w-full min-w-[200px] justify-between md:justify-start">
-      <a href="" target="_blank" rel="nooper noreferrer">
+      <a
+        href="https://openclassrooms.com/fr/profile/view-as/recruiter/"
+        target="_blank"
+        rel="nooper noreferrer"
+      >
         <motion.button
           className="h-12 w-12 grid place-items-center rounded-full outline outline-1 outline-white bg-transparent border-none"
           whileHover={{
             cursor: "pointer",
             outlineOffset: "3px",
-            background: "#0F1419",
+            background: "#7451eb",
           }}
         >
-          <motion.svg
-            className="fill-white transition-all"
+          <svg
+            version="1.0"
             xmlns="http://www.w3.org/2000/svg"
-            height="16"
             width="16"
-            viewBox="0 0 512 512"
+            height="16"
+            viewBox="0 0 400.000000 400.000000"
+            preserveAspectRatio="xMidYMid meet"
           >
-            <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
-          </motion.svg>
+            <g
+              transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)"
+              fill="#ffff"
+              stroke="none"
+            >
+              <path
+                d="M235 3991 c-89 -22 -171 -89 -209 -170 l-21 -46 0 -1775 0 -1775 25
+              -50 c31 -63 89 -121 149 -149 l46 -21 1775 0 1775 0 50 25 c63 31 121 89 149
+              149 l21 46 0 1775 0 1775 -25 50 c-31 63 -89 121 -149 149 l-46 21 -1755 2
+              c-965 0 -1768 -2 -1785 -6z m1830 -520 c140 -33 210 -58 350 -126 413 -202
+              704 -576 807 -1036 20 -90 23 -131 23 -309 0 -160 -4 -224 -18 -290 -152 -711
+              -758 -1210 -1472 -1210 -219 0 -392 34 -580 114 -94 39 -228 113 -284 155
+              l-24 18 233 278 c128 152 242 288 254 302 l22 25 62 -31 c171 -86 408 -94 585
+              -19 147 62 295 197 360 330 59 120 80 220 75 357 -8 198 -78 352 -221 488
+              -129 122 -266 181 -442 190 -127 7 -220 -9 -321 -53 -43 -20 -84 -38 -90 -40
+              -6 -3 -125 131 -264 297 l-253 302 24 18 c48 38 183 113 268 149 110 48 210
+              78 336 101 139 26 438 20 570 -10z"
+              />
+            </g>
+          </svg>
         </motion.button>
       </a>
       <a
@@ -50,7 +74,7 @@ const Socials = () => {
         </motion.button>
       </a>
       <a
-        href="https://www.linkedin.com/"
+        href="https://fr.linkedin.com/in/theo-duru-78714314b/en-us"
         target="_blank"
         rel="noopener noreferrer"
       >

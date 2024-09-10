@@ -5,11 +5,14 @@ const TopSection = () => {
   return (
     <section className="flex flex-col-reverse md:flex-row">
       <div className="bg-red-300 rounded-3xl m-2 p-10 relative overflow-hidden flex flex-col md:min-w-[500px] lg:max-w-[700px] lg:pr-[100px]">
-        <h1 className="font-semibold text-2xl leading-[116.7%]">
+        <h1 className="font-semibold text-2xl leading-[116.7%] md:text-[40px] md:leading-[47px]">
           Bonjour je suis Theo, jeune développeur à la recherche d'une
-          alternance
+          alternance.
         </h1>
-        <p className="leading-[151%] mt-4"></p>
+        <p className="leading-[151%] mt-4">
+          En pleine reconversion après ma carrière sportive, je me forme sur le
+          métier de développeur Web avec une spécialisation en React.
+        </p>
         <div className="flex flex-wrap gap-2 mt-auto md:flex-nowrap">
           <a
             href="mailto:urud.theo@gmail.com"

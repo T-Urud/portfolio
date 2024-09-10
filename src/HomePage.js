@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 const HomePage = () => {
   return (
-    <div className="px-4">
+    <div className="mx-auto px-5 lg:px-12">
       <Header />
       <main>
         <TopSection />

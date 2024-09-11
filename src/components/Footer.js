@@ -4,14 +4,15 @@ import Socials from "./Socials";
 const Footer = () => {
   return (
     <footer id="contact" className="mt-5">
-      <div className="min-h-[350px] rounded-3xl m-2 p-10 relative overflow-hidden bg-[#F1F1F1] flex flex-col">
-        <h2 className="font-semibold text-4xl leading-[47px]">
-          On travaille ensemble ?
-        </h2>
+      <div className="min-h-[350px] rounded-3xl m-2 p-10 relative overflow-hidden bg-red-300 flex flex-col">
+        <h2 className="font-semibold text-4xl leading-[47px]">Intéressé ?</h2>
         <p className="text-lg leading-[151%] mt-5">
-          Feel free to reach out for collaborations or just a friendly hello
+          N'hésitez pas à me contacter pour toutes informations supplémentaires,
+          demandes de collaboration
         </p>
-        <a href="mailto:urud.theo@gmail.com">urud.theo@gmail.com</a>
+        <a href="mailto:urud.theo@gmail.com" className="text-lg font-semibold">
+          urud.theo@gmail.com
+        </a>
         <div className="flex flex-wrap gap-2 mt-auto md:flex-nowrap">
           <a
             href="mailto:urud.theo@gmail.com"

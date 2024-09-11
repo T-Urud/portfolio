@@ -26,6 +26,23 @@ const AnimatedCard = () => {
       .catch((err) => setError(err.message));
   }, []);
 
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const variantsWidth =
+    screenWidth <= 325
+      ? hoverState
+        ? { height: "50px", overflow: "hidden" }
+        : { height: "150px", overflow: "none" }
+      : hoverState
+      ? { height: "37.6px", overflow: "hidden" }
+      : { height: "121.6px", overflow: "none" };
+
   return (
     <div className="flex flex-col justify-between md:flex-row md:flex-wrap">
       {error ? (
@@ -37,7 +54,7 @@ const AnimatedCard = () => {
           return (
             <motion.div
               key={project.id}
-              className="relative w-full h-[350px] max-w-[352.8px] shadow-xl rounded-3xl m-[10px] md:max-w-[calc(50%-20px)]"
+              className="relative w-full h-[350px] max-w-[calc(100%-20px)] shadow-xl rounded-3xl m-[10px] md:max-w-[calc(50%-20px)]"
               onHoverStart={() => handleHover(project.id, true)}
               onHoverEnd={() => handleHover(project.id, false)}
             >
@@ -53,11 +70,9 @@ const AnimatedCard = () => {
                   <motion.div
                     onClick={() => handleClick(project.id)}
                     initial={{ height: "37.6px", overflow: "hidden" }}
-                    animate={
-                      isHover
-                        ? { height: "121.6px", overflow: "none" }
-                        : { height: "37.6px", overflow: "hidden" }
-                    }
+                    animate={variantsWidth}
+                    onHoverStart={() => handleHover(project.id, true)}
+                    onHoverEnd={() => handleHover(project.id, false)}
                     transition={{ duration: 0.6 }}
                     className={
                       isClicked
@@ -66,21 +81,21 @@ const AnimatedCard = () => {
                     }
                   >
                     <div className="flex justify-between w-full z-20 mb-2">
-                      <h1 className="text-white font-semibold text-sm">
+                      <h1 className="text-white font-semibold text-sm text-center">
                         {project.title}
                       </h1>
-                      <div className="flex">
-                        <span className="text-white text-sm font-semibold">
-                          {project.id}
-                        </span>
-                        <span className="text-white text-sm font-light">
-                          /nuit
-                        </span>
-                      </div>
+                      <span className="text-white text-sm font-semibold text-center">
+                        {project.origin}
+                      </span>
                     </div>
                     <div>
-                      <div className="flex justify-between mb-4">
-                        <div className="flex gap-2 items-center">
+                      <div className="mb-4">
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex gap-2 items-center max-w-fit"
+                        >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 640 512"
@@ -93,9 +108,9 @@ const AnimatedCard = () => {
                             />
                           </svg>
                           <span className="text-xs text-white font-semibold">
-                            {project.techno}
+                            {project.link}
                           </span>
-                        </div>
+                        </a>
                       </div>
                       <div className="w-full">
                         {isHover && (

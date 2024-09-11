@@ -10,13 +10,7 @@ const HomePage = () => {
       <Header />
       <main>
         <TopSection />
-        <section
-          className="m-2 flex flex-col md:flex-row md:flex-wrap md:justify-between gap-y-4"
-          id="project"
-        >
-          <AnimatedCard />
-          <AnimatedCard />
-          <AnimatedCard />
+        <section id="project">
           <AnimatedCard />
         </section>
       </main>

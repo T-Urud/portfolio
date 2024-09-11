@@ -1,16 +1,56 @@
-{
-  "title":"Villa Banovi",
-  "price":"225€",
-  "rating":"4",
-  "location":"Paris, France",
-  "equipments":[
-    "Douche italienne",
-		"Cuisine équipée",
-		"WIFI",
-    "Parking",
-		"Sèche Cheveux",
-		"Machine à laver"
-  ],
-  "description":"Ce loft entièrement rénové, et équipé de meubles de luxe saura vous séduire. Idéalement situé dans le 10ème arrondissement, vous déplacer dans Paris sera un véritable jeu d'enfant.",
-  "host":"Theo D"
-}
+[
+  {
+    "id":"1",
+    "title":"Sophie Bluel",
+    "description":"Création d'une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API.",
+    "link":"https://github.com/T-Urud/Bluel-project",
+    "techno":["JavaScript", "Css"],
+    "problems":"",
+    "skills":""
+  },
+  {
+    "id":"2",
+    "title":"Projet Kasa",
+    "description":"Réalisation du front-end d'une application web de location immobilière en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.",
+    "link":"https://github.com/T-Urud/Kasa-project",
+    "techno":["React","Sass"],
+    "problems":"",
+    "skills":""
+  },
+  {
+    "id":"3",
+    "title":"Animated card",
+    "description":"Card component avec interaction",
+    "link":"https://github.com/T-Urud/animated-card-component",
+    "technos":["React", "TailwindCSS", "Framer Motion"],
+    "problems":"",
+    "skills":""
+  },
+  {
+    "id":"4",
+    "title":"Projet backend",
+    "description":"Développement du back-end d'un site de notation de livres. Création des modèles de données et des opérations CRUD pour la gestion des livres et des notations. Développement du système d'authentification sécurisé pour les utilisateurs du site.",
+    "link":"https://github.com/T-Urud/mon-vieux-grimoire",
+    "techno":["Node.js","Express","MongoDB", "Bcrypt"],
+    "problems":"",
+    "skills":""
+  },
+  {
+    "id":"5",
+    "title":"Duplex Le14",
+    "description":"",
+    "link":"https://github.com/T-Urud/le14-project",
+    "techno":["React", "TailwindCSS", "Framer Motion"],
+    "problems":"",
+    "skills":""
+  },
+  {
+    "id":"6",
+    "title":"Restaurant",
+    "description":"",
+    "link":"https://github.com/T-Urud/Restaurant-project",
+    "techno":["Html", "Sass", "JavaScript"],
+    "problems":"",
+    "skills":""
+  }
+]

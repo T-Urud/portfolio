@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
 import ClickComponent from "./ClickComponent";
+import Image from "../Image";
 
 const AnimatedCard = () => {
   const [hoverState, setIsHover] = useState({});
@@ -26,23 +27,6 @@ const AnimatedCard = () => {
       .catch((err) => setError(err.message));
   }, []);
 
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => setScreenWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const variantsWidth =
-    screenWidth <= 325
-      ? hoverState
-        ? { height: "50px", overflow: "hidden" }
-        : { height: "150px", overflow: "none" }
-      : hoverState
-      ? { height: "37.6px", overflow: "hidden" }
-      : { height: "121.6px", overflow: "none" };
-
   return (
     <div className="flex flex-col justify-between md:flex-row md:flex-wrap">
       {error ? (
@@ -59,8 +43,8 @@ const AnimatedCard = () => {
               onHoverEnd={() => handleHover(project.id, false)}
             >
               <img
-                src="/landscape_art_road_127350_800x600.jpg"
-                alt=""
+                src={Image[0]}
+                alt="image du projet"
                 className="h-full object-cover w-full rounded-3xl"
               />
               <div className="w-full h-full absolute top-0">
@@ -70,7 +54,11 @@ const AnimatedCard = () => {
                   <motion.div
                     onClick={() => handleClick(project.id)}
                     initial={{ height: "37.6px", overflow: "hidden" }}
-                    animate={variantsWidth}
+                    animate={
+                      isHover
+                        ? { height: "121.6px", overflow: "none" }
+                        : { height: "37.6px", overflow: "hidden" }
+                    }
                     onHoverStart={() => handleHover(project.id, true)}
                     onHoverEnd={() => handleHover(project.id, false)}
                     transition={{ duration: 0.6 }}
@@ -84,7 +72,7 @@ const AnimatedCard = () => {
                       <h1 className="text-white font-semibold text-sm text-center">
                         {project.title}
                       </h1>
-                      <span className="text-white text-sm font-semibold text-center">
+                      <span className="text-white text-sm font-semibold text-center hidden md:block">
                         {project.origin}
                       </span>
                     </div>

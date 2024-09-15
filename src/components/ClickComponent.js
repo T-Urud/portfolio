@@ -108,7 +108,7 @@ const ClickComponent = ({ projectData, isHover }) => {
           </div>
           <div>
             <p className="font-light text-[0.7rem] text-gray-400">
-              {projectData.description}
+              {projectData.problems}
             </p>
           </div>
         </div>

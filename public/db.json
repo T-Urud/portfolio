@@ -6,7 +6,7 @@
     "origin":"projet de formation",
     "link":"https://github.com/T-Urud/Bluel-project",
     "technos":["Html", "JavaScript", "Css"],
-    "problems":""
+    "problems":"Première utilisation concrète de JavaScript avec une API. Il a fallu apprendre toute la gestion d'un login/logout pour les utilisateurs. Création et gestion de modale d'ajout de projets."
   },
   {
     "id":"2",
@@ -15,12 +15,12 @@
     "link":"https://github.com/T-Urud/Kasa-project",
     "origin":"projet de formation",
     "technos":["React","Sass"],
-    "problems":""
+    "problems":"Premier projet réalisé avec React. Apprentissage de React-router, axios et des principaux hooks et fonctionnalités."
   },
   {
     "id":"3",
     "title":"Animated card",
-    "description":"Card component avec interaction",
+    "description":"Card component avec interaction, animations réalisées avec Framer Motion",
     "origin":"projet personnel",
     "link":"https://github.com/T-Urud/animated-card-component",
     "technos":["React", "TailwindCSS", "Framer Motion"],
@@ -33,7 +33,7 @@
     "origin":"projet de formation",
     "link":"https://github.com/T-Urud/mon-vieux-grimoire",
     "technos":["Node.js","Express","MongoDB", "Bcrypt"],
-    "problems":""
+    "problems":"Apprentissage de Node.js, Express et MongoDB. L'implémentation de multer pour contrôler la taille de l'image importée a nécessité beaucoup de travail."
   },
   {
     "id":"5",

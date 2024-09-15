@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
 
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -12,7 +11,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center relative h-[75px] md:h-unset md:py-2 md:mt-3 z-50">
+    <header className="flex justify-between items-center relative h-[75px] px-3 md:h-unset md:py-2 md:mt-3 z-50">
       <motion.div
         animate={isOpen ? "open" : "closed"}
         transition={{ duration: 0.2 }}
@@ -44,8 +43,13 @@ const Header = () => {
           Contact
         </Link>
       </motion.div>
-      <a href="/" className="z-50">
-        theo/image
+      <a href="/" className="z-50 flex items-center gap-2">
+        <img
+          src="color-screen.png"
+          alt="color"
+          className="rounded-full w-5 h-5"
+        />
+        <span className="font-semibold text-sm">THEO</span>
       </a>
       <motion.button
         onClick={() => setIsOpen((isOpen) => !isOpen)}

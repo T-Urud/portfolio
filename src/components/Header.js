@@ -11,12 +11,12 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center relative h-[75px] px-3 md:h-unset md:py-2 md:mt-3 z-50">
+    <header className="flex justify-between items-center relative h-[75px] px-3 md:h-unset md:py-2 md:mt-3 z-[100]">
       <motion.div
         animate={isOpen ? "open" : "closed"}
         transition={{ duration: 0.2 }}
         variants={variants}
-        className="fixed w-screen h-screen top-0 mt-[75px] bg-white translate-x-0 flex flex-col z-50 md:hidden"
+        className="fixed w-screen h-screen left-0 top-0 mt-[75px] bg-white translate-x-0 flex flex-col z-50 md:hidden"
       >
         <Link
           smooth
@@ -24,7 +24,7 @@ const Header = () => {
           className="z-50 font-semibold text-2xl leading-[30px] text-black ml-5 mt-[30px]"
           onClick={() => setIsOpen((isOpen) => !isOpen)}
         >
-          <motion.span whileHover={{ scale: 1.1 }}>Accueil</motion.span>
+          Accueil
         </Link>
         <Link
           smooth

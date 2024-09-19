@@ -10,7 +10,7 @@ const TopSection = () => {
           alternance.
         </h1>
         <p className="leading-[151%] mt-4">
-          En pleine reconversion après ma carrière sportive, je me forme sur le
+          En pleine reconversion après ma carrière sportive, je me forme au
           métier de développeur Web avec une spécialisation en React.
         </p>
         <div className="flex flex-wrap gap-2 mt-auto md:flex-nowrap">

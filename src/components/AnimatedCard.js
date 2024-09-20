@@ -45,7 +45,7 @@ const AnimatedCard = () => {
               <img
                 src={Image[index]}
                 alt="image du projet"
-                className="h-full object-cover w-full rounded-3xl -scale-75 rotate-180"
+                className="h-full object-contain w-full rounded-3xl -scale-75 rotate-180"
               />
               <div className="w-full h-full absolute top-0">
                 {isClicked ? (

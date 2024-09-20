@@ -11,7 +11,11 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center fixed top-0 h-[75px] px-3 md:h-unset md:py-2 md:mt-3 z-[100]">
+    <header
+      className={`flex justify-between items-center h-[75px] px-3 z-[100] md:h-unset md:py-2 md:mt-3 ${
+        isOpen ? "fixed top-0 left-0 bg-white w-full" : "relative"
+      }`}
+    >
       <motion.div
         animate={isOpen ? "open" : "closed"}
         transition={{ duration: 0.2 }}

@@ -6,6 +6,9 @@ module.exports = {
       height: {
         unset: "unset",
       },
+      screens: {
+        imgSizeMQ: "500px",
+      },
     },
   },
   plugins: [],

@@ -1,5 +1,6 @@
 import React from "react";
 import Socials from "./Socials";
+import ProfilePic from "../assets/img/profile-picture.webp";
 
 const TopSection = () => {
   return (
@@ -28,8 +29,8 @@ const TopSection = () => {
         </div>
       </div>
       <img
-        src="/landscape_art_road_127350_800x600.jpg"
-        alt=""
+        src={ProfilePic}
+        alt="Theo Duru"
         className="rounded-3xl m-2 object-cover h-[40vh] min-h-[300px] max-h-[400px] w-[calc(100%-20px)] md:w-[calc(40vw-40px)] md:min-w-[200px] md:max-w-[460px] md:h-[500px] md:max-h-[570px]"
       />
     </section>

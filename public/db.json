@@ -33,7 +33,7 @@
     "origin":"projet personnel",
     "link":"https://github.com/T-Urud/animated-card-component",
     "technos":["React", "TailwindCSS", "Framer Motion"],
-    "problems":""
+    "problems":"Première utilisation de Framer Motion avec TailwindCSS. Le projet a demandé un peu de réflexion au niveau de l'utilisation de la propriété Css 'position', et de l'animation de la hauteur."
   },
   {
     "id":"5",

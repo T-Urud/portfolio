@@ -48,7 +48,7 @@ const Socials = () => {
         </motion.button>
       </a>
       <a
-        href="https://fr.linkedin.com/in/theo-duru-78714314b/en-us"
+        href="https://www.linkedin.com/in/theo-duru-78714314b"
         target="_blank"
         rel="noopener noreferrer"
       >

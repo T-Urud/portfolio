@@ -5,7 +5,9 @@ const Footer = () => {
   return (
     <footer id="contact" className="mt-5">
       <div className="min-h-[350px] rounded-3xl m-2 p-10 relative overflow-hidden bg-gradient-to-r from-[rgba(255,207,207,1)] via-[rgba(255,121,121,1)] to-[rgba(252,0,0,0.9)] [background-position:0%_37%_75%] flex flex-col">
-        <h2 className="font-semibold text-4xl leading-[47px]">Intéressé ?</h2>
+        <h2 className="font-semibold text-[2.1rem] leading-[47px] footerTextMQ:text-4xl">
+          Intéressé ?
+        </h2>
         <p className="text-lg leading-[151%] mt-5">
           N'hésitez pas à me contacter pour toutes informations supplémentaires,
           demandes de collaboration

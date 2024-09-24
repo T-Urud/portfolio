@@ -8,6 +8,8 @@ module.exports = {
       },
       screens: {
         imgSizeMQ: "500px",
+        profilePicMQ: "430px",
+        footerTextMQ: "321px",
       },
     },
   },

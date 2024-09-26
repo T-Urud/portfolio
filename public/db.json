@@ -44,13 +44,12 @@
     "technos":["React", "TailwindCSS", "Framer Motion"],
     "problems":""
   },
-  {
-    "id":"6",
-    "title":"Restaurant",
-    "description":"",
+{    "id":"6",
+    "title":"Interactive button",
+    "description":"React component interactif réutilisable dans un projet. Les animations ont été réalisées avec Framer Motion.",
     "origin":"projet personnel",
-    "link":"https://github.com/T-Urud/Restaurant-project",
-    "technos":["Html", "Sass", "JavaScript"],
-    "problems":""
+    "link":"https://github.com/T-Urud/interactive-BTN",
+    "technos":["React", "TailwindCSS", "Framer Motion"],
+    "problems":"Avoir l'effet de pop-up lors du click et la taille du container qui varie ont été sujet à réflexion."
   }
 ]

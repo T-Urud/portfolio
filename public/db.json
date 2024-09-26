@@ -38,11 +38,11 @@
   {
     "id":"5",
     "title":"Duplex Le14",
-    "description":"",
+    "description":"Site vitrine réalisé pour un gîte. C'est un petit projet réalisé bénévolement pour une personne de mon entourage afin de développer mes capacités et améliorer mes connaissances en React.",
     "origin":"projet personnel",
     "link":"https://github.com/T-Urud/le14-project",
     "technos":["React", "TailwindCSS", "Framer Motion"],
-    "problems":""
+    "problems":"Premier projet réalisé à partir de zéro, découverte de certaines librairies React. Mise en pratique des connaissances acquises lors de la formation OpenClassrooms."
   },
 {    "id":"6",
     "title":"Interactive button",

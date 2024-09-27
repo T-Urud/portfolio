@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.551591aa.css",
-    "main.js": "/portfolio/static/js/main.e74dccbb.js",
+    "main.js": "/portfolio/static/js/main.06784a4f.js",
     "static/media/profile-pic.webp": "/portfolio/static/media/profile-pic.3f698feb0e2a5ad5c2fa.webp",
     "static/media/screen-Bluel-project.webp": "/portfolio/static/media/screen-Bluel-project.4159a23f79050b7fd806.webp",
     "static/media/screen-Card-project.webp": "/portfolio/static/media/screen-Card-project.a43c7ae815bb07a7c63c.webp",
@@ -14,10 +14,10 @@
     "static/media/Kasa-Logo.webp": "/portfolio/static/media/Kasa-Logo.cb1889529b432d012aae.webp",
     "index.html": "/portfolio/index.html",
     "main.551591aa.css.map": "/portfolio/static/css/main.551591aa.css.map",
-    "main.e74dccbb.js.map": "/portfolio/static/js/main.e74dccbb.js.map"
+    "main.06784a4f.js.map": "/portfolio/static/js/main.06784a4f.js.map"
   },
   "entrypoints": [
     "static/css/main.551591aa.css",
-    "static/js/main.e74dccbb.js"
+    "static/js/main.06784a4f.js"
   ]
 }

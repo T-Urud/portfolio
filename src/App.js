@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router } from "react-router-hash-link";
+import { HashRouter } from "react-router-hash-link";
 import Header from "./components/Header";
 import TopSection from "./components/TopSection";
 import Footer from "./components/Footer";
@@ -7,7 +7,7 @@ import AnimatedCard from "./components/AnimatedCard";
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <div className="mx-auto px-5 lg:px-12">
         <Header />
         <main>
@@ -18,7 +18,7 @@ const App = () => {
         </main>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 };
 

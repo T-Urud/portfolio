@@ -20,7 +20,7 @@ const AnimatedCard = () => {
 
   useEffect(() => {
     axios
-      .get("/db.json")
+      .get(process.env.PUBLIC_URL + "/db.json")
       .then((res) => {
         setProjectData(res.data);
       })

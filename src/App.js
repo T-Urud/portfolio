@@ -1,15 +1,22 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./HomePage";
+import Header from "./components/Header";
+import TopSection from "./components/TopSection";
+import Footer from "./components/Footer";
+import AnimatedCard from "./components/AnimatedCard";
 
-function App() {
+const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <div className="mx-auto px-5 lg:px-12">
+      <Header />
+      <main>
+        <TopSection />
+        <section id="project">
+          <AnimatedCard />
+        </section>
+      </main>
+      <Footer />
+    </div>
   );
-}
+};
 
 export default App;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { HashLink as Link } from "react-router-hash-link";
 import { motion } from "framer-motion";
+import ColorImg from "../assets/img/color-screen.png";
 
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -22,37 +22,30 @@ const Header = () => {
         variants={variants}
         className="fixed w-screen h-screen left-0 top-0 mt-[75px] bg-white translate-x-0 flex flex-col z-50 md:hidden"
       >
-        <Link
-          smooth
-          to="#"
+        <a
+          href="#"
           className="z-50 font-semibold text-2xl leading-[30px] text-black ml-5 mt-[30px]"
           onClick={() => setIsOpen((isOpen) => !isOpen)}
         >
           Accueil
-        </Link>
-        <Link
-          smooth
-          to="#project"
+        </a>
+        <a
+          href="#project"
           className="font-semibold text-2xl leading-[30px] text-black ml-5 mt-[30px]"
           onClick={() => setIsOpen((isOpen) => !isOpen)}
         >
           Projets
-        </Link>
-        <Link
-          smooth
-          to="#contact"
+        </a>
+        <a
+          href="#contact"
           className="font-semibold text-2xl leading-[30px] text-black ml-5 mt-[30px] mr-5"
           onClick={() => setIsOpen((isOpen) => !isOpen)}
         >
           Contact
-        </Link>
+        </a>
       </motion.div>
       <a href="/" className="z-50 flex items-center gap-2">
-        <img
-          src="color-screen.png"
-          alt="color"
-          className="rounded-full w-5 h-5"
-        />
+        <img src={ColorImg} alt="color" className="rounded-full w-5 h-5" />
         <span className="font-semibold text-sm">THEO</span>
       </a>
       <motion.button
@@ -81,19 +74,19 @@ const Header = () => {
       </motion.button>
       <nav className="md:flex text-sm list-none hidden">
         <li>
-          <Link smooth to="#" className="ml-[50px] text-black font-semibold">
+          <a href="#" className="ml-[50px] text-black font-semibold">
             Accueil
-          </Link>
+          </a>
         </li>
         <li>
-          <Link smooth to="#project" className="ml-[50px] text-[#727272]">
+          <a href="#project" className="ml-[50px] text-[#727272]">
             Projets
-          </Link>
+          </a>
         </li>
         <li>
-          <Link smooth to="#contact" className="ml-[50px] text-[#727272]">
+          <a href="#contact" className="ml-[50px] text-[#727272]">
             Contact
-          </Link>
+          </a>
         </li>
       </nav>
     </header>

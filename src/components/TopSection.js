@@ -1,6 +1,6 @@
 import React from "react";
 import Socials from "./Socials";
-import ProfilePic from "../assets/img/profile-picture.webp";
+import ProfilePic from "../assets/img/profile-pic.webp";
 
 const TopSection = () => {
   return (
@@ -12,7 +12,17 @@ const TopSection = () => {
         </h1>
         <p className="leading-[151%] mt-4">
           En pleine reconversion après ma carrière sportive, je me forme au
-          métier de développeur Web avec une spécialisation en React.
+          métier de développeur Web avec une spécialisation en React. <br />
+          Je viens de terminer ma première{" "}
+          <span className="font-semibold">
+            formation diplômante "Développeur Web"
+          </span>{" "}
+          de chez OpenClassrooms. <br />
+          Je souhaite poursuivre sur le parcours{" "}
+          <span className="font-semibold">
+            "Développeur d'application JavaScript React"
+          </span>{" "}
+          au sein du même organisme.
         </p>
         <div className="flex flex-wrap gap-2 mt-auto md:flex-nowrap">
           <a
@@ -31,7 +41,7 @@ const TopSection = () => {
       <img
         src={ProfilePic}
         alt="Theo Duru"
-        className="rounded-3xl m-2 object-cover h-[40vh] min-h-[300px] max-h-[400px] w-[calc(100%-20px)] md:w-[calc(40vw-40px)] md:min-w-[200px] md:max-w-[460px] md:h-[500px] md:max-h-[570px] profilePicMQ:h-full imgSizeMQ:object-contain md:object-cover"
+        className="rounded-3xl m-2 object-cover h-[40vh] min-h-[300px] max-h-[400px] w-[calc(100%-20px)] md:w-[calc(40vw-40px)] md:min-w-[200px] md:max-w-[460px] md:h-[500px] md:max-h-[570px] profilePicMQ:h-full"
       />
     </section>
   );

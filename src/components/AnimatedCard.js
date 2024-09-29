@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
 import ClickComponent from "./ClickComponent";
-import Image from "../Image";
+import Image from "../constants/Image";
 
 const AnimatedCard = () => {
   const [hoverState, setIsHover] = useState({});
@@ -64,11 +64,9 @@ const AnimatedCard = () => {
                     onHoverStart={() => handleHover(project.id, true)}
                     onHoverEnd={() => handleHover(project.id, false)}
                     transition={{ duration: 0.6 }}
-                    className={
-                      isClicked
-                        ? "absolute bottom-0 left-1/2 transform -translate-x-1/2 py-2 px-2 rounded-2xl bg-transparent backdrop-blur-sm w-full h-full z-10 cursor-pointer"
-                        : "absolute bottom-0 left-1/2 transform -translate-x-1/2 py-2 px-2 rounded-2xl bg-transparent backdrop-blur-sm mb-2 w-[90%] z-10 h-full cursor-pointer"
-                    }
+                    className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 py-2 px-2 rounded-2xl bg-transparent backdrop-blur-sm h-full z-10 cursor-pointer ${
+                      isClicked ? "w-full" : "w-[90%]"
+                    } ${isClicked ? null : "mb-2"}`}
                   >
                     <div className="flex justify-between w-full z-20 mb-2">
                       <h2 className="font-semibold text-sm text-center">

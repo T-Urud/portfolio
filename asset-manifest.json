@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.551591aa.css",
-    "main.js": "/portfolio/static/js/main.aa174a72.js",
+    "main.css": "/portfolio/static/css/main.be63e431.css",
+    "main.js": "/portfolio/static/js/main.22d5a2ca.js",
     "static/media/profile-pic.webp": "/portfolio/static/media/profile-pic.3f698feb0e2a5ad5c2fa.webp",
     "static/media/screen-Bluel-project.webp": "/portfolio/static/media/screen-Bluel-project.4159a23f79050b7fd806.webp",
     "static/media/screen-Card-project.webp": "/portfolio/static/media/screen-Card-project.a43c7ae815bb07a7c63c.webp",
@@ -13,11 +13,11 @@
     "static/media/Mvg-Logo.webp": "/portfolio/static/media/Mvg-Logo.7953df15ea01f3e2cc13.webp",
     "static/media/Kasa-Logo.webp": "/portfolio/static/media/Kasa-Logo.cb1889529b432d012aae.webp",
     "index.html": "/portfolio/index.html",
-    "main.551591aa.css.map": "/portfolio/static/css/main.551591aa.css.map",
-    "main.aa174a72.js.map": "/portfolio/static/js/main.aa174a72.js.map"
+    "main.be63e431.css.map": "/portfolio/static/css/main.be63e431.css.map",
+    "main.22d5a2ca.js.map": "/portfolio/static/js/main.22d5a2ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.551591aa.css",
-    "static/js/main.aa174a72.js"
+    "static/css/main.be63e431.css",
+    "static/js/main.22d5a2ca.js"
   ]
 }

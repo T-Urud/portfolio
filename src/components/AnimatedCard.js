@@ -6,6 +6,15 @@ import Image from "../constants/Image";
 
 const AnimatedCard = () => {
   const [hoverState, setIsHover] = useState({});
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkmobile = () => setIsMobile(window.innerWidth <= 768);
+    checkmobile();
+    window.addEventListener("resize", checkmobile);
+    return () => window.removeEventListener("resize", checkmobile);
+  }, []);
+
   const handleHover = (id, isHovering) => {
     setIsHover((prev) => ({ ...prev, [id]: isHovering }));
   };
@@ -35,23 +44,30 @@ const AnimatedCard = () => {
         projectData.map((project, index) => {
           const isHover = hoverState[project.id] || false;
           const isClicked = clickState[project.id] || false;
+
+          const hoverEvents = isMobile
+            ? { onTap: () => handleClick(project.id) }
+            : {
+                onHoverStart: () => handleHover(project.id, true),
+                onHoverEnd: () => handleHover(project.id, false),
+              };
+
           return (
             <motion.div
               key={project.id}
               className="relative w-full h-[350px] max-w-[calc(100%-20px)] shadow-xl rounded-3xl m-[10px] md:max-w-[calc(50%-20px)]"
-              onHoverStart={() => handleHover(project.id, true)}
-              onHoverEnd={() => handleHover(project.id, false)}
+              {...hoverEvents}
             >
               <img
                 src={Image[index]}
-                alt="image du projet"
+                alt={`projet${[index]}`}
                 className={`h-full object-contain w-[530px] rounded-3xl imgSizeMQ:w-full ${
                   index === 1 ? "rotate-180 -scale-50" : ""
                 } ${index === 2 ? "rotate-180 -scale-75" : ""}`}
               />
               <div className="w-full h-full absolute top-0">
                 {isClicked ? (
-                  <ClickComponent projectData={project} isHover={isHover} />
+                  <ClickComponent projectData={project} />
                 ) : (
                   <motion.div
                     onClick={() => handleClick(project.id)}
@@ -61,8 +77,6 @@ const AnimatedCard = () => {
                         ? { height: "121.6px", overflow: "none" }
                         : { height: "37.6px", overflow: "hidden" }
                     }
-                    onHoverStart={() => handleHover(project.id, true)}
-                    onHoverEnd={() => handleHover(project.id, false)}
                     transition={{ duration: 0.6 }}
                     className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 py-2 px-2 rounded-2xl bg-transparent backdrop-blur-sm h-full z-10 cursor-pointer ${
                       isClicked ? "w-full" : "w-[90%]"

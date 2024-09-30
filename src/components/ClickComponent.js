@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const ClickComponent = ({ projectData, isHover }) => {
+const ClickComponent = ({ projectData }) => {
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={isHover ? { opacity: 1 } : 0}
+      animate={isActive ? { opacity: 1 } : null}
       transition={{ duration: 0.4 }}
       className="absolute bottom-0 rounded-2xl bg-[#f8f9f9] w-full h-full z-10"
+      onHoverStart={() => setIsActive(true)}
+      onHoverEnd={() => setIsActive(false)}
+      onTap={() => setIsActive(!isActive)}
     >
       <div className="px-2 py-4 bg-white rounded-2xl cursor-pointer">
         <div className="flex justify-between w-full z-20 mb-2">

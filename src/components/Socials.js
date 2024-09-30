@@ -8,6 +8,7 @@ const Socials = () => {
         href="https://openclassrooms.com/fr/profile/view-as/recruiter/"
         target="_blank"
         rel="nooper noreferrer"
+        aria-label="Theo Duru OpenClassrooms Profile"
       >
         <motion.button
           className="h-12 w-12 grid place-items-center rounded-full outline outline-1 outline-white bg-transparent border-none mx-2"
@@ -16,6 +17,7 @@ const Socials = () => {
             outlineOffset: "3px",
             background: "#7451eb",
           }}
+          aria-label="Visit Theo Duru's OpenClassroom Profile"
         >
           <svg
             version="1.0"
@@ -51,6 +53,7 @@ const Socials = () => {
         href="https://www.linkedin.com/in/theo-duru-78714314b"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Theo Duru LinkedIn Profile"
       >
         <motion.button
           className="h-12 w-12 grid place-items-center rounded-full outline outline-white outline-1 bg-transparent border-none mx-2"
@@ -59,6 +62,7 @@ const Socials = () => {
             outlineOffset: "3px",
             background: "#0a66c2",
           }}
+          aria-label="Visit Theo Duru's LinkedIn Profile"
         >
           <motion.svg
             className="fill-white transition-all"
@@ -75,6 +79,7 @@ const Socials = () => {
         href="https://github.com/T-Urud"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Theo Duru GitHub Profile"
       >
         <motion.button
           className="h-12 w-12 grid place-items-center rounded-full outline outline-white outline-1 bg-transparent border-none mx-2"
@@ -83,6 +88,7 @@ const Socials = () => {
             outlineOffset: "3px",
             background: "#0F1419",
           }}
+          aria-label="Visit Theo Duru's GitHub Profile"
         >
           <motion.svg
             className="fill-white transition-all"

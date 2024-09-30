@@ -44,7 +44,7 @@ const Header = () => {
           Contact
         </a>
       </motion.div>
-      <a href="/" className="z-50 flex items-center gap-2">
+      <a href="#" className="z-50 flex items-center gap-2">
         <img src={ColorImg} alt="color" className="rounded-full w-5 h-5" />
         <span className="font-semibold text-sm">THEO</span>
       </a>

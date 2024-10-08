@@ -5,7 +5,7 @@
     "description":"Création d'une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API.",
     "origin":"projet de formation",
     "github_link":"https://github.com/T-Urud/Bluel-project",
-    "vercel_link":"",
+    "vercel_link":"https://github.com/T-Urud/Bluel-project",
     "technos":["Html", "JavaScript", "Css"],
     "problems":"Première utilisation concrète de JavaScript avec une API. Il a fallu apprendre toute la gestion d'un login/logout pour les utilisateurs. Création et gestion de modale d'ajout de projets."
   },

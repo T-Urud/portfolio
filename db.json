@@ -4,7 +4,8 @@
     "title":"Projet Sophie Bluel",
     "description":"Création d'une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API.",
     "origin":"projet de formation",
-    "link":"https://github.com/T-Urud/Bluel-project",
+    "github_link":"https://github.com/T-Urud/Bluel-project",
+    "vercel_link":"",
     "technos":["Html", "JavaScript", "Css"],
     "problems":"Première utilisation concrète de JavaScript avec une API. Il a fallu apprendre toute la gestion d'un login/logout pour les utilisateurs. Création et gestion de modale d'ajout de projets."
   },
@@ -12,7 +13,8 @@
     "id":"2",
     "title":"Projet Kasa",
     "description":"Réalisation du front-end d'une application web de location immobilière en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.",
-    "link":"https://github.com/T-Urud/Kasa-project",
+    "github_link":"https://github.com/T-Urud/Kasa-project",
+    "vercel_link":"https://kasa-project-rho.vercel.app/",
     "origin":"projet de formation",
     "technos":["React","Sass"],
     "problems":"Premier projet réalisé avec React. Apprentissage de React-router, axios et des principaux hooks et fonctionnalités."
@@ -22,7 +24,8 @@
     "title":"Projet backend",
     "description":"Développement du back-end d'un site de notation de livres. Création des modèles de données et des opérations CRUD pour la gestion des livres et des notations. Développement du système d'authentification sécurisé pour les utilisateurs du site.",
     "origin":"projet de formation",
-    "link":"https://github.com/T-Urud/mon-vieux-grimoire",
+    "github_link":"https://github.com/T-Urud/mon-vieux-grimoire",
+    "vercel_link":"",
     "technos":["Node.js","Express","MongoDB", "Bcrypt"],
     "problems":"Apprentissage de Node.js, Express et MongoDB. L'implémentation de multer pour contrôler la taille de l'image importée a nécessité beaucoup de travail."
   },
@@ -31,7 +34,8 @@
     "title":"Animated card",
     "description":"Card component avec interaction, animations réalisées avec Framer Motion",
     "origin":"projet personnel",
-    "link":"https://github.com/T-Urud/animated-card-component",
+    "github_link":"https://github.com/T-Urud/animated-card-component",
+    "vercel_link":"https://animated-card-component.vercel.app/",
     "technos":["React", "TailwindCSS", "Framer Motion"],
     "problems":"Première utilisation de Framer Motion avec TailwindCSS. Le projet a demandé un peu de réflexion au niveau de l'utilisation de la propriété Css 'position', et de l'animation de la hauteur."
   },
@@ -40,7 +44,8 @@
     "title":"Duplex Le14",
     "description":"Site vitrine réalisé pour un gîte. C'est un petit projet réalisé bénévolement pour une personne de mon entourage afin de développer mes capacités et améliorer mes connaissances en React.",
     "origin":"projet personnel",
-    "link":"https://github.com/T-Urud/le14-project",
+    "github_link":"https://github.com/T-Urud/le14-project",
+    "vercel_link":"",
     "technos":["React", "TailwindCSS", "Framer Motion"],
     "problems":"Premier projet réalisé à partir de zéro, découverte de certaines librairies React. Mise en pratique des connaissances acquises lors de la formation OpenClassrooms."
   },
@@ -48,7 +53,8 @@
     "title":"Interactive button",
     "description":"React component interactif réutilisable dans un projet. Les animations ont été réalisées avec Framer Motion.",
     "origin":"projet personnel",
-    "link":"https://github.com/T-Urud/interactive-BTN",
+    "github_link":"https://github.com/T-Urud/interactive-BTN",
+    "vercel_link":"https://interactive-btn.vercel.app/",
     "technos":["React", "TailwindCSS", "Framer Motion"],
     "problems":"Avoir l'effet de pop-up lors du click et la taille du container qui varie ont été sujet à réflexion."
   }

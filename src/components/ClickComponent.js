@@ -19,7 +19,7 @@ const ClickComponent = ({ projectData }) => {
         </div>
         <div className="flex items-center justify-between">
           <a
-            href={projectData.link}
+            href={projectData.github_link}
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs flex items-center gap-2"
@@ -35,7 +35,7 @@ const ClickComponent = ({ projectData }) => {
             </svg>
             {/* <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> */}
             <span className="font-light text-[0.7rem] text-gray-400">
-              {projectData.link}
+              {projectData.github_link}
             </span>
           </a>
         </div>
@@ -118,9 +118,13 @@ const ClickComponent = ({ projectData }) => {
         </div>
       </motion.div>
       <div className="absolute bottom-0 w-full py-2 px-3 bg-white rounded-2xl">
-        <a href={projectData.link} target="_blank" rel="noopener noreferrer">
+        <a
+          href={projectData.vercel_link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="bg-[#49ff00] focus:outline-none font-semibold rounded-full text-xs p-2 dark:bg-[#49ff00] w-full my-2">
-            Direction GitHub
+            Voir le rendu
           </button>
         </a>
       </div>

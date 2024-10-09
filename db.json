@@ -5,7 +5,7 @@
     "description":"Création d'une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API.",
     "origin":"projet de formation",
     "github_link":"https://github.com/T-Urud/Bluel-project",
-    "vercel_link":"",
+    "vercel_link":"https://github.com/T-Urud/Bluel-project",
     "technos":["Html", "JavaScript", "Css"],
     "problems":"Première utilisation concrète de JavaScript avec une API. Il a fallu apprendre toute la gestion d'un login/logout pour les utilisateurs. Création et gestion de modale d'ajout de projets."
   },
@@ -25,7 +25,7 @@
     "description":"Développement du back-end d'un site de notation de livres. Création des modèles de données et des opérations CRUD pour la gestion des livres et des notations. Développement du système d'authentification sécurisé pour les utilisateurs du site.",
     "origin":"projet de formation",
     "github_link":"https://github.com/T-Urud/mon-vieux-grimoire",
-    "vercel_link":"",
+    "vercel_link":"https://github.com/T-Urud/mon-vieux-grimoire",
     "technos":["Node.js","Express","MongoDB", "Bcrypt"],
     "problems":"Apprentissage de Node.js, Express et MongoDB. L'implémentation de multer pour contrôler la taille de l'image importée a nécessité beaucoup de travail."
   },
@@ -45,7 +45,7 @@
     "description":"Site vitrine réalisé pour un gîte. C'est un petit projet réalisé bénévolement pour une personne de mon entourage afin de développer mes capacités et améliorer mes connaissances en React.",
     "origin":"projet personnel",
     "github_link":"https://github.com/T-Urud/le14-project",
-    "vercel_link":"",
+    "vercel_link":"https://duplex-le14.vercel.app/",
     "technos":["React", "TailwindCSS", "Framer Motion"],
     "problems":"Premier projet réalisé à partir de zéro, découverte de certaines librairies React. Mise en pratique des connaissances acquises lors de la formation OpenClassrooms."
   },
